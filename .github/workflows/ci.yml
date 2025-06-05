@@ -47,8 +47,5 @@ jobs:
 
       - name: Run SonarCloud Analysis
         uses: SonarSource/sonarcloud-github-action@v2
-        with:
-          organization: mfazms
-          projectKey: mfazms_dummyfppso
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
